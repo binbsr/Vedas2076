@@ -36,3 +36,12 @@
 
 CollectionLearner cl = new();
 cl.LearnDictionary();
+
+
+Room room1 = new();
+room1.Length = 12;
+
+room1.Width = 10;
+
+var areaOfRoom1 = room1.Area;
+

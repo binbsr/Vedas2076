@@ -17,12 +17,20 @@ class Person
     public string name;
     public string contact;
     public float weightInKg;
-    public char gender;
+    public Gender gender;
     public static string scientificName = "Homo Sepians";
 
     // functionalities
     public void PrintDetails()
     {
         Console.WriteLine($"Details on {name}");
+        gender = Gender.Female;
     }
+}
+
+public enum Gender
+{
+    Male,
+    Female,
+    Others
 }
