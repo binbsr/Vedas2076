@@ -29,7 +29,10 @@
 // const double weightOfEarth = 335432545.3535;
 
 
-A aa = new A();
-B b = new();
-b.Test();
+// A aa = new A();
+// B b = new();
+// b.Test();
 
+
+CollectionLearner cl = new();
+cl.LearnDictionary();
