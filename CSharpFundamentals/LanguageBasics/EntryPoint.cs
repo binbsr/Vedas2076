@@ -34,14 +34,16 @@
 // b.Test();
 
 
-CollectionLearner cl = new();
-cl.LearnDictionary();
+// CollectionLearner cl = new();
+// cl.LearnDictionary();
 
 
-Room room1 = new();
-room1.Length = 12;
+// Room room1 = new();
+// room1.Length = 12;
 
-room1.Width = 10;
+// room1.Width = 10;
 
-var areaOfRoom1 = room1.Area;
+// var areaOfRoom1 = room1.Area;
 
+LINQ l = new();
+l.LearnLINQ();
