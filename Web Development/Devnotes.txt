@@ -1,0 +1,49 @@
+- Internet/www Early 90's
+
+- JSP - Java Server Pages
+- ASP - Active Server Pages
+
+- Early 2000 .NET Framework (Windows Only) last version 4.8
+- Mono - open source .NET implementation
+
+- Windows forms (.NET)
+- ASP.NET - Web (Web Forms)
+
+- MVC (Model View Controller)
+- 2007/8 - ASP.NET MVC
+
+- 2015/2016 .NET Core - Cross-platform, Open-source, Performance
+- ASP.NET Core
+
+- 2020 .NET 5
+- ASP.NET Core
+
+
+HTTP - Protocol that runs Web
+HTTPS
+FTP
+FTPS
+
+URL
+==================
+https://www.abc.com/a/b/c?name=bishnu&age=89
+
+https://www.google.com/search?q=kathmandu&sxsrf=APwXEddFhRrlJQW8wmC5AzXnIDU5_8wQMg%3A1686114045575&source=hp&ei=_Q6AZOaAIYPWhwOAp5SYAg&iflsig=AOEireoAAAAAZIAdDX1UlvHNvAGIW6VrLnS80St_L9ls&ved=0ahUKEwim8_ClsLD_AhUD62EKHYATBSMQ4dUDCAk&uact=5&oq=kathmandu&gs_lcp=Cgdnd3Mtd2l6EAMyBwguEIoFECcyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsILhCABBCxAxCDATILCAAQgAQQsQMQgwEyCAgAEIAEELEDMhEILhCABBCxAxCDARDHARCvATIRCC4QgAQQsQMQgwEQxwEQrwE6BwgjEOoCECc6BwgjEIoFECc6BAguEAM6CwgAEIoFELEDEIMBOgUIABCABDoHCCMQsQIQJzoNCAAQgAQQsQMQgwEQCjoQCC4QgwEQ1AIQsQMQgAQQCjoNCC4QgAQQsQMQgwEQCjoKCAAQgAQQsQMQCjoTCC4QgAQQsQMQgwEQxwEQrwEQClB2WP8ZYMocaARwAHgBgAHAA4gBmhqSAQcyLTUuMy4ymAEAoAEBsAEK&sclient=gws-wiz
+
+https://www.bing.com/search?q=kathmandu&search=&form=QBLH
+
+
+
+
+Library Management
+========================
+Book (Id, Name, Author, Price, Publisher, Language, Edition, Published Date)
+Student (Id, Name, Address, Contact, Dob, Gender)
+
+
+
+
+
+
+
+

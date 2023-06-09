@@ -45,5 +45,12 @@
 
 // var areaOfRoom1 = room1.Area;
 
-LINQ l = new();
-l.LearnLINQ();
+// LINQ l = new();
+// l.LearnLINQ();
+
+
+// FDHandling fd = new();
+// fd.LearnDirectories();
+
+ParallelAndAsync pa = new();
+pa.LearnParallel();
