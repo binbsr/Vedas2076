@@ -1,48 +1,16 @@
 
+using LibraryManagement.Data;
 using Microsoft.AspNetCore.Mvc;
 
 public class BooksController : Controller
 {
-    static List<Book> books = new List<Book>()
-    {
-        new Book
-        {
-            Id = 1,
-            Title = "Chemistry",
-            Author = "Stephen",
-            Edition = "III",
-            Language = "En",
-            Price = 456.34,
-            Publisher = "LPE",
-            PublishedDate = DateTime.Now
-        },
-        new Book
-        {
-            Id = 1,
-            Title = "Physics",
-            Author = "Peter",
-            Edition = "II",
-            Language = "En",
-            Price = 656.34,
-            Publisher = "LPE",
-            PublishedDate = DateTime.Now
-        },
-        new Book
-        {
-            Id = 1,
-            Title = "Data Structure and Algorithms",
-            Author = "Ram",
-            Edition = "I",
-            Language = "Np",
-            Price = 1056.34,
-            Publisher = "LPE",
-            PublishedDate = DateTime.Now
-        }
-    };
+    LMContext db = new();
 
     [HttpGet]
     public IActionResult Index()
     {
+        var books = db.Books.ToList();
+
         return View(books);
     }
 
@@ -56,7 +24,9 @@ public class BooksController : Controller
     public IActionResult Add(Book book)
     {
         // Do something with book object
-        books.Add(book);
+        db.Add(book);
+        db.SaveChanges();
+
         return RedirectToAction("Index");
     }
 

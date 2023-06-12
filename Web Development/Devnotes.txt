@@ -41,6 +41,29 @@ Book (Id, Name, Author, Price, Publisher, Language, Edition, Published Date)
 Student (Id, Name, Address, Contact, Dob, Gender)
 
 
+Databases
+==========================
+1. Relational Dbs: Oracle, mySql, SqLite, Postgres, * Sql Server etc.
+2. No Sql: Mongodb, DynamoDb, Document Dbs etc.
+
+Data Access
+=========================
+1. ADO.NET - Active Data Objects on .NET (SqlConnection, SqlCommand, SqlReader etc.)
+2. ORM Tools - Object Relational Mapper - *Entity Framework Core, Dapper, NHibernate etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
