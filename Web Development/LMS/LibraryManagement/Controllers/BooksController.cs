@@ -49,4 +49,23 @@ public class BooksController : Controller
         return RedirectToAction("Index");
     }
 
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        var book = db.Books.Find(id);
+        if (book is null)
+            return NotFound($"Book with id {id} is not found");
+
+        return View(book);
+    }
+
+    [HttpPost]
+    public IActionResult Delete(Book book)
+    {
+        db.Books.Remove(book);
+        db.SaveChanges();
+
+        return RedirectToAction("Index");
+    }
+
 }

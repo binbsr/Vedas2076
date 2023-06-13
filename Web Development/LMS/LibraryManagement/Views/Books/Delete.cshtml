@@ -1,0 +1,10 @@
+﻿@model Book
+
+<div class="text-center">
+    <h2 class="text-danger">Are you sure to delete data for book titled "@Model.Title"?</h2>
+    <form action="/books/delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <a href="/books" class="btn btn-success">Cancel</a>
+        <button class="btn btn-danger" type="submit">Delete</button>
+    </form>
+</div>
