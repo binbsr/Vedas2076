@@ -30,4 +30,23 @@ public class BooksController : Controller
         return RedirectToAction("Index");
     }
 
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        var book = db.Books.Find(id);
+        if(book is null)
+            return NotFound($"Book with id {id} is not found");
+
+        return View(book);
+    }
+
+    [HttpPost]
+    public IActionResult Edit(Book book)
+    {
+        db.Books.Update(book);
+        db.SaveChanges();
+
+        return RedirectToAction("Index");
+    }
+
 }
