@@ -1,16 +1,17 @@
 
 using LibraryManagement.Data;
+using LibraryManagement.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 public class BooksController : Controller
 {
     LMContext db = new();
+    BooksRepository booksRepository = new();
 
     [HttpGet]
-    public IActionResult Index()
+    public IActionResult Index(string searchText = "")
     {
-        var books = db.Books.ToList();
-
+        var books = booksRepository.Get(searchText);
         return View(books);
     }
 
@@ -24,8 +25,7 @@ public class BooksController : Controller
     public IActionResult Add(Book book)
     {
         // Do something with book object
-        db.Add(book);
-        db.SaveChanges();
+        booksRepository.Insert(book);
 
         return RedirectToAction("Index");
     }
@@ -34,7 +34,7 @@ public class BooksController : Controller
     public IActionResult Edit(int id)
     {
         var book = db.Books.Find(id);
-        if(book is null)
+        if (book is null)
             return NotFound($"Book with id {id} is not found");
 
         return View(book);
