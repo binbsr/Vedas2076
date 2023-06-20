@@ -1,8 +1,10 @@
 
 using LibraryManagement.Data;
 using LibraryManagement.Infrastructure.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
+[Authorize]
 public class BooksController : Controller
 {
     LMContext db = new();
